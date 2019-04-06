@@ -1,0 +1,237 @@
+body
+{
+    background: #eee;
+    perspective: 1000px;
+}
+
+.face
+{
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sixpack
+{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    /* animation-name: obroty;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; */
+}
+
+.top
+{
+    background: lightcoral;
+    transform: rotateX(90deg) translateZ(50px) translateY(-50px);
+}
+
+.bottom
+{
+    background: lightgreen;
+    transform: rotateX(90deg) translateZ(-50px) translateY(-50px);
+}
+
+.left
+{
+    background: lightgray;
+    transform: rotateY(90deg) translateX(50px) translateZ(-50px);
+}
+
+.right
+{
+    background: lightgoldenrodyellow;
+    transform: rotateY(90deg) translateX(50px) translateZ(50px);
+}
+
+.front
+{
+    background: lightskyblue;
+}
+
+.back
+{
+    background: lightslategray;
+    transform: translateZ(-100px);
+}
+
+.box1
+{
+    width: 100px;
+    margin-left: 20%;
+    margin-top: 500px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s; */
+}
+
+.box1:hover
+{
+    transform: rotateX(-45deg) rotateY(175deg); 
+}
+
+.box2
+{
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 500px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s;  */
+}
+
+.box2:hover
+{
+     transform: rotateX(-45deg) rotateY(175deg);
+}
+
+.box3
+{
+    width: 100px;
+    margin-left: 60%;
+    margin-top: 500px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s;  */
+}
+
+.box3:hover
+{
+    transform: rotateX(-45deg) rotateY(175deg);
+}
+
+.box4
+{
+    width: 100px;
+    margin-left: 80%;
+    margin-top: 500px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s; */
+}
+
+.box4:hover
+{
+     transform: rotateX(-45deg) rotateY(175deg);
+}
+
+.box5
+{
+    width: 100px;
+    margin-left: 20%;
+    margin-top: 200px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    top: -200px;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s; */
+}
+
+.box5:hover
+{
+    transform: rotateX(-45deg) rotateY(175deg);
+}
+
+.box6
+{
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 200px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    top: -200px;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s;  */
+}
+
+.box6:hover
+{
+     transform: rotateX(-45deg) rotateY(175deg);
+}
+
+.box7
+{
+    width: 100px;
+    margin-left: 60%;
+    margin-top: 200px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    top: -200px;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s;  */
+}
+
+.box7:hover
+{
+     transform: rotateX(-45deg) rotateY(175deg);
+}
+
+.box8
+{
+    width: 100px;
+    margin-left: 80%;
+    margin-top: 200px;
+    transform: rotateX(15deg) rotateY(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    top: -200px;
+    transition: transform 3s ease-in-out;
+    /* animation-name: obroty;
+    animation-duration 3s; */
+}
+
+.box8:hover
+{
+     transform: rotateX(-45deg) rotateY(175deg);
+}
+
+
+
+
+
+
+
+@keyframes obroty
+{
+    0%{
+        transform: rotateX(45deg) rotateY(0) rotateZ(115deg);
+    }
+    25%
+    {
+        transform: rotateX(45deg) rotateY(45deg) rotateZ(115deg); 
+    }
+    50%
+    {
+        transform: rotateX(45deg) rotateY(125deg) rotateZ(75deg);
+    }
+    75%
+    {
+        transform: rotateX(125deg) rotateY(225deg) rotateZ(175deg);
+    }
+    100%
+    {
+        transform: rotateX(45deg) rotateY(0) rotateZ(115deg);
+    }
+}
